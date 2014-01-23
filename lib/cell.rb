@@ -2,10 +2,10 @@ class Cell
   attr_reader :location, :neighbors
 
   def initialize(args = {})
-  	@alive = args.fetch(:alive) { false }
+    @alive = args.fetch(:alive) { false }
     @alive_last_turn = args.fetch(:alive_last_turn) { false }
-  	@location = args.fetch(:location) { {x: 0, y: 0} }
-  	@neighbors = {}
+    @location = args.fetch(:location) { {x: 0, y: 0} }
+    @neighbors = {}
   end
 
   def alive?
