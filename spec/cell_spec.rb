@@ -7,8 +7,8 @@ describe Cell do
   end
 
   it "can be created either alive or dead" do
-  	expect( Cell.new(alive: true).alive? ).to be_true
-  	expect( Cell.new(alive: false).alive? ).to be_false
+    expect( Cell.new(alive: true).alive? ).to be_true
+    expect( Cell.new(alive: false).alive? ).to be_false
   end
 
   it "has a location of 0:0 by default" do
